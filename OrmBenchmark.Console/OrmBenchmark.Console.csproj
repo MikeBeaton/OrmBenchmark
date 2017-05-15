@@ -101,6 +101,10 @@
       <Project>{52bb39f0-d161-4ec0-b223-1ebb0ca48e07}</Project>
       <Name>OrmBenchmark.Dapper</Name>
     </ProjectReference>
+    <ProjectReference Include="..\OrmBenchmark.Massive\OrmBenchmark.Massive.csproj">
+      <Project>{a0bb5232-3bda-4429-aecb-23f8437462d7}</Project>
+      <Name>OrmBenchmark.Massive</Name>
+    </ProjectReference>
     <ProjectReference Include="..\OrmBenchmark.MightyOrm\OrmBenchmark.MightyOrm.csproj">
       <Project>{1f703eb5-3547-476d-bbc7-b262854e839b}</Project>
       <Name>OrmBenchmark.MightyOrm</Name>

@@ -31,9 +31,10 @@ namespace OrmBenchmark.ConsoleUI
             benchmarker.RegisterOrmExecuter(new PetaPoco.PetaPocoFetchFastExecuter());
             benchmarker.RegisterOrmExecuter(new OrmToolkit.OrmToolkitExecuter());
             benchmarker.RegisterOrmExecuter(new OrmToolkit.OrmToolkitNoQueryExecuter());
+			benchmarker.RegisterOrmExecuter(new Massive.MassiveExecuter());
 			benchmarker.RegisterOrmExecuter(new MightyOrm.MightyORMExecuter());
 
-            Console.Write("\nDo you like to have a warm-up stage(y/[n])?");
+			Console.Write("\nDo you like to have a warm-up stage(y/[n])?");
             var str = Console.ReadLine();
             if (str.Trim().ToLower() == "y" || str.Trim().ToLower() == "yes")
                 warmUp = true;
