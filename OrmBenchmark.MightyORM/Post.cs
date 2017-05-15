@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OrmBenchmark.MightyORM
+namespace OrmBenchmark.MightyOrm
 {
     public class Post : IPost
     {

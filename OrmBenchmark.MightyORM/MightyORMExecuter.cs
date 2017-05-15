@@ -8,11 +8,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OrmBenchmark.MightyORM
+namespace OrmBenchmark.MightyOrm
 {
     public class MightyORMExecuter : IOrmExecuter
     {
-		Mighty.MightyORM modelDynamic;
+		MightyORM modelDynamic;
 		DbConnection connectionDynamic;
 
 		MightyORM<Post> modelGeneric;
@@ -28,7 +28,7 @@ namespace OrmBenchmark.MightyORM
 
         public void Init(string connectionString)
         {
-			modelDynamic = new Mighty.MightyORM(connectionString + ";ProviderName=System.Data.SqlClient");
+			modelDynamic = new MightyORM(connectionString + ";ProviderName=System.Data.SqlClient");
 			connectionDynamic = modelDynamic.OpenConnection();
 			modelGeneric = new MightyORM<Post>(connectionString + ";ProviderName=System.Data.SqlClient");
 			connectionGeneric = modelGeneric.OpenConnection();
